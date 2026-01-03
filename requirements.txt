@@ -1,0 +1,15 @@
+numpy
+sounddevice
+soundfile
+simpleaudio
+pydub
+python-dotenv
+requests
+loguru
+webrtcvad
+openai-whisper
+ollama
+TTS
+elevenlabs==1.2.0
+PyAudio
+faster_whisper
