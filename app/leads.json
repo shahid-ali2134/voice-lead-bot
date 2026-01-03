@@ -1,38 +1,9 @@
 [
   {
-    "timestamp": "2025-10-28T14:42:51.423560",
-    "lead": {
-      "name": "Shahid",
-      "company": "TechTerra Technologies",
-      "budget": "$4000",
-      "interest": "AI chatbots"
-    }
-  },
-  {
-    "timestamp": "2025-10-28T15:11:43.578329",
-    "lead": {
-      "name": "Shahid",
-      "company": "I am working from TechChart Technologies",
-      "budget": "$5000",
-      "interest": "creating AI chatbots and AI agents"
-    }
-  },
-  {
-    "timestamp": "2025-12-08T05:30:32.427958",
-    "lead": {
-      "name": "Shahid",
-      "company": "TechTerror Technologies",
-      "budget": "$5000",
-      "interest": "AI Channels"
-    }
-  },
-  {
-    "timestamp": "2026-01-03T14:04:24.961207",
-    "lead": {
-      "name": "Shahid",
-      "company": "I am working from Tech-Taner Technologies",
-      "budget": "$5000",
-      "interest": "to build chatbots and AI agents"
-    }
+    "name": "Shahid",
+    "company": "ABC",
+    "budget": "$5000",
+    "interest": "XYZ",
+    "timestamp": 1767458114.3233588
   }
 ]

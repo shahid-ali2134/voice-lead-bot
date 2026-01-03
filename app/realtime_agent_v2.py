@@ -82,6 +82,10 @@ class RealTimeAgentVAD:
     # ====================== LEAD EXTRACTION HELPERS ======================
     def extract_name(self, text: str) -> str:
         text = text.strip().rstrip(".!?").strip()
+
+        # ✅ remove greeting prefix like "Hello," / "Hi," / "Hey,"
+        text = re.sub(r"^(hello|hi|hey)\s*,?\s*", "", text, flags=re.IGNORECASE).strip()
+
         lowered = text.lower()
 
         intro_phrases = [
@@ -92,9 +96,10 @@ class RealTimeAgentVAD:
         for phrase in intro_phrases:
             if lowered.startswith(phrase):
                 name = text[len(phrase):].strip()
-                name = re.sub(r"[^A-Za-z\s\-]", "", name)
+                name = re.sub(r"[^A-Za-z\s\-]", "", name).strip()
                 return name
 
+        # fallback: just strip non-letters
         return re.sub(r"[^A-Za-z\s\-]", "", text).strip()
 
     def extract_company(self, text: str) -> str:
